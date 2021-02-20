@@ -22,4 +22,5 @@ variable "instance_type" {
 
 variable "prefix" {
     description = "Unique prefix for naming"
+    default = "mike"
 }
