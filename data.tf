@@ -1,24 +1,24 @@
 data "aws_vpc" "primary-vpc" {
-    default = true
+  default = true
 }
 
 data "aws_ami" "ubuntu" {
-    most_recent = true
+  most_recent = true
 
-    filter {
-        name = "name"
-        values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-*"]
-    }
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-*"]
+  }
 
-    filter {
-        name = "virtualization-type"
-        values = ["hvm"]
-    }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
 
-    filter {
-        name = "architecture"
-        values = ["x86_64"]
-    }
+  filter {
+    name   = "architecture"
+    values = ["x86_64"]
+  }
 
-    owners = ["099720109477"]
+  owners = ["099720109477"]
 }
