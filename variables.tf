@@ -24,3 +24,11 @@ variable "prefix" {
   description = "Unique prefix for naming"
   default     = "mike"
 }
+
+variable "instance_id" {
+  description = "Instance id for simple instance"
+}
+
+variable "instance_public_ip" {
+  description = "Instance public ip"
+}
