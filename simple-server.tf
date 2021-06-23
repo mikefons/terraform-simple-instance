@@ -12,7 +12,7 @@ resource "aws_instance" "simple-server" {
 
   tags = {
     Name = "${var.prefix}-simple-server"
-    Env  = "env3"
+    Env  = "env5"
   }
 }
 
